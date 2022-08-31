@@ -44,7 +44,6 @@ export default {
     this.$axios.get(
       `https://express24.uz/rest/v3/catalog/places-detail/?width=180&height=180&stores_ids[]=5626&stores_ids[]=6377&stores_ids[]=5149&stores_ids[]=4796&stores_ids[]=4869&stores_ids[]=6693&stores_ids[]=6303&stores_ids[]=6935&stores_ids[]=3902&stores_ids[]=6549&stores_ids[]=3524&stores_ids[]=3768&stores_ids[]=5941&stores_ids[]=3425&stores_ids[]=4052&stores_ids[]=4902&stores_ids[]=7179&stores_ids[]=3466&stores_ids[]=4568&stores_ids[]=4848&stores_ids[]=5679&d_width=720&d_height=330&merchantId=1`
     ).then((res)=>{ this.tip = res.data;
-    console.log(res.data.name);
     });
     
   },
@@ -57,14 +56,14 @@ export default {
 .card {
   width: 440px;
   height: auto;
-  margin: 60px 15px;
+  margin: 40px 15px;
   padding: 20px;
   transition: all 0.5s ease;
   border-radius: 8px;
 }
 .card:hover {
   box-shadow: 0 0 30px #888;
-  transform: translateY(-30px);
+  transform: translateY(-20px);
 }
 h3 {
   margin: 10px 0;
@@ -75,6 +74,7 @@ h3 {
   position: relative;
   top: 0;
   left: 0;
+  font-size: 30px;
 }
 .img-card .full-img {
   width: 100%;
@@ -87,7 +87,7 @@ h3 {
   object-fit: cover;
   border-radius: 16px;
   position: absolute;
-  right: 50px;
+  right: 30px;
   bottom: -40px;
   box-shadow: 0 0 10px #555;
 }
